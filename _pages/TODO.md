@@ -2,6 +2,7 @@
 layout: page
 title: TODO
 permalink: /TODO
+katex: true
 ---
 
 # Maintenance
