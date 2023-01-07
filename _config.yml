@@ -28,7 +28,7 @@ plugins:
   - jekyll-mermaid
 
 mermaid:
-  src: 'path/to/mermaid.js'
+  src: 'assets/mermaid.min.js'
 
 sass:
   sass_dir:          _sass
