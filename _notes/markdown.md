@@ -13,15 +13,8 @@ graph TD;
     A-->C;
     B-->D;
     C-->D;
+    D-->A;
 {% endmermaid %}
-
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
 
 Some Rust code to test syntax highlighting:
 
