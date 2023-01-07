@@ -16,6 +16,31 @@ graph TD;
     D-->A;
 {% endmermaid %}
 
+TypeScript syntax highlighting needs to work:
+
+```ts
+class Slot<T> extends null {
+  constructor(private _value: T) {
+    super();
+  }
+  get value(): T {
+    return this._value;
+  }
+}
+```
+
+Attempting GraphQL query syntax:
+
+```graphql
+query SomeQuery ($someVariable: SomeType) {
+  someField {
+    someSubField @someDirective(someArgument: $someVariable) {
+      someSubSubField
+    }
+  }
+}
+```
+
 Some Rust code to test syntax highlighting:
 
 ```rust
