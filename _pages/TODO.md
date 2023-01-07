@@ -5,7 +5,13 @@ permalink: /TODO
 katex: true
 ---
 
-# Maintenance
+# Left to do
+
+## Content
+
+- [ ] Add a page for each of the following topics:
+
+## Maintenance
 
 - [ ] Remove inherited notes and content
 - [x] Find a way to preview build locally without installing Ruby toolchain
@@ -17,7 +23,7 @@ katex: true
       jekyll serve
     ```
 
-# Improvements
+## Improvements
 
 - [x] Make sure {% katex %}\KaTeX{% endkatex %} math is rendered server-side
 - [ ] Make the build faster.
