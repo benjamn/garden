@@ -12,4 +12,4 @@ katex: true
 
 # Improvements
 
-- [x] Make sure {% katex %}$\KaTeX${% endkatex %} math is rendered server-side
+- [x] Make sure {% katex %}\KaTeX{% endkatex %} math is rendered server-side
