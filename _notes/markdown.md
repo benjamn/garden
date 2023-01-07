@@ -1,11 +1,19 @@
 ---
-title: Markdown miscellany
+title: Markdown menagerie
 katex: true
 ---
 
-Basic linking: [@benjamn](https://github.com/benjamn)[^aka]
+Basic linking, with a footnote: [@benjamn](https://github.com/benjamn)[^aka]
 
 [^aka]: Also known as Ben Newman.
+
+{% mermaid %}
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+{% endmermaid %}
 
 ```mermaid
 graph TD;
