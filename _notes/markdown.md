@@ -36,13 +36,14 @@ fn main() {
 }
 ```
 
-Display math for computing $\pi$:
+{% katexmm %}
+Display math inside a `katexmm` block (computing $\pi$):
 $$
 \pi = \sum_{k = 0}^{\infty}\left[\frac{1}{16^k} \left(\frac{4}{8k+1}-\frac{2}{8k+4}-\frac{1}{8k + 5}-\frac{1}{8k+6}\right)\right]
 $$
-
-{% katexmm %}
-Math inside a `katexmm` block:
-
-$$\aleph^\infty$$
 {% endkatexmm %}
+
+Code block with math language tag:
+```math
+\pi = \sum_{k = 0}^{\infty}\left[\frac{1}{16^k} \left(\frac{4}{8k+1}-\frac{2}{8k+4}-\frac{1}{8k + 5}-\frac{1}{8k+6}\right)\right]
+```
