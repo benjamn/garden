@@ -25,6 +25,10 @@ relative_permalinks: false
 plugins:
   - jekyll-last-modified-at
   - jekyll-katex
+  - jekyll-mermaid
+
+mermaid:
+  src: 'path/to/mermaid.js'
 
 sass:
   sass_dir:          _sass
