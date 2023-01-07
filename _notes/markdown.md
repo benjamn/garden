@@ -43,3 +43,5 @@ $$
 \pi = \sum_{k = 0}^{\infty}\left[\frac{1}{16^k} \left(\frac{4}{8k+1}-\frac{2}{8k+4}-\frac{1}{8k + 5}-\frac{1}{8k+6}\right)\right]
 $$
 {% endkatexmm %}
+
+Do emoji shortcodes also work, like `:fire:` for :fire:? What about :ghost:? GitHub-specific ones like :shipit:?
