@@ -13,7 +13,7 @@ katex: true
 
 ## Maintenance
 
-- [ ] Remove inherited notes and content
+- [x] Remove inherited notes and content
 - [x] Find a way to preview build locally without installing Ruby toolchain
   - Here it is, for posterity:
     ```sh
