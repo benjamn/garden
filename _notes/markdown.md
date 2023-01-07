@@ -1,5 +1,6 @@
 ---
 title: Markdown miscellany
+katex: true
 ---
 
 Basic linking: [@benjamn](https://github.com/benjamn)[^aka]
