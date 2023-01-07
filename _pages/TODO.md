@@ -11,4 +11,4 @@ permalink: /TODO
 
 # Improvements
 
-- [ ] Make sure math is rendered server-side
+- [x] Make sure {% katex %}\KaTeX{% endkatex $} math is rendered server-side
