@@ -34,3 +34,7 @@ fn main() {
     }
 }
 ```
+
+And math:
+
+$$\aleph^\infty$$
