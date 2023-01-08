@@ -10,4 +10,4 @@ This note has a random UUID as its file name, but a human readable title, which 
 
 This note should remain relatively secret as long as no other public notes link to it, and this note does not give itself away by linking to other public notes (which would cause this note to appear in those notes' incoming link lists).[^graph-privacy]
 
-[^graph-privacy]: If a whole-graph visualization were to be implemented without care, this note and other secret notes could be exposed.
+[^graph-privacy]: Any future graph visualization of notes in this garden should avoid exposing notes that were previously secret.

@@ -44,7 +44,7 @@ query SomeQuery ($someVariable: SomeType) {
 }
 ```
 
-Some Rust code to test syntax highlighting:
+Some Rust code to test highlighting of languages I pretend to know:
 
 ```rust
 enum Message {
