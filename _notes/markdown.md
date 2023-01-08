@@ -72,4 +72,6 @@ $$
 $$
 {% endkatexmm %}
 
-Do emoji shortcodes also work, like `:fire:` for :fire:? What about :ghost:? GitHub-specific ones like :shipit:?
+~~Do emoji shortcodes also work, like `:fire:` for :fire:? What about :ghost:? GitHub-specific ones like :shipit:?~~
+
+Exposing an otherwise "secret" note: [[Example secret note]].

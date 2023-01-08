@@ -7,3 +7,6 @@ other notes can link to without knowing the file name: [[Example secret note]]
 
 Since the file name of this note is not a hash of its contents, the contents can
 change freely over time, and all links to this note will remain intact.
+
+This note is linked to from the [[Markdown menagerie]] note, as an example of a
+"secret" note, but should not otherwise be discoverable.
