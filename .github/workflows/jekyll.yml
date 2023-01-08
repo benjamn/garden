@@ -45,6 +45,15 @@ jobs:
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Cache the build
+        uses: actions/cache@v3
+        with:
+          path: _site
+          key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-jekyll-build-
+            ${{ runner.os }}-jekyll-
+            ${{ runner.os }}-
 
   upload:
     environment:
