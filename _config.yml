@@ -2,6 +2,8 @@ title: Ben's Digital Garden
 
 include: ['_pages']
 exclude: [
+  # All the top-level files we don't want to publish, and that are not already
+  # hidden by having names starting with _ or . characters.
   'LICENSE',
   'netlify.toml',
   'Gemfile',
