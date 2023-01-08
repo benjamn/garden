@@ -49,7 +49,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: _site
-          key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock') }}
+          key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock', '**/_config.yml') }}
           restore-keys: |
             ${{ runner.os }}-jekyll-build-
             ${{ runner.os }}-jekyll-
@@ -66,11 +66,7 @@ jobs:
         uses: actions/cache@v3
         with:
           path: _site
-          key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-jekyll-build-
-            ${{ runner.os }}-jekyll-
-            ${{ runner.os }}-
+          key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock', '**/_config.yml') }}
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
