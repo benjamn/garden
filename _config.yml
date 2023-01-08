@@ -9,6 +9,9 @@ exclude: [
   'Gemfile',
   'Gemfile.lock',
   'README.md',
+  'node_modules/',
+  'package-lock.json',
+  'package.json',
   '_includes/notes_graph.json'
 ]
 # You may need to change the base URL depending on your deploy configuration.
