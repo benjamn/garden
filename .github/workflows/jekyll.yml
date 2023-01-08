@@ -50,10 +50,6 @@ jobs:
         with:
           path: _site
           key: ${{ runner.os }}-jekyll-build-${{ hashFiles('**/Gemfile.lock', '**/_config.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-jekyll-build-
-            ${{ runner.os }}-jekyll-
-            ${{ runner.os }}-
 
   upload:
     environment:
