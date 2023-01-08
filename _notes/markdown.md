@@ -19,11 +19,14 @@ graph TD;
 TypeScript syntax highlighting needs to work:
 
 ```ts
-class Slot<T> extends null {
+export class Slot<T> extends null {
   constructor(private _value: T) {
     super();
   }
   get value(): T {
+    return this._value;
+  }
+  method<U extends T>(): U {
     return this._value;
   }
 }
