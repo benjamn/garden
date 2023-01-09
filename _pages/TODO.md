@@ -5,7 +5,7 @@ permalink: /TODO
 katex: true
 ---
 
-# Left to do
+# Items left to do
 
 ## Content
 

@@ -7,13 +7,15 @@ Basic linking, with a footnote: [@benjamn](https://github.com/benjamn)[^aka]
 
 [^aka]: Also known as Ben Newman.
 
+Mermaid diagrams via Jekyll `mermaid` tags:
+
 {% mermaid %}
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-    D-->A;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+  D-->A;
 {% endmermaid %}
 
 TypeScript syntax highlighting needs to work:
