@@ -2,9 +2,9 @@ let opacityTimeout;
 let contentTimeout;
 let transitionDurationMs = 100;
 
-const iframe = document.getElementById('link-preview-iframe');
-const tooltipWrapper = document.getElementById('tooltip-wrapper');
-const tooltipContent = document.getElementById('tooltip-content');
+const iframe = document.createElement('iframe');
+const tooltipWrapper = document.createElement('div');
+const tooltipContent = document.createElement('div');
 
 const linkHistories = Object.create(null);
 
@@ -63,7 +63,7 @@ function showTooltip(event) {
 }
 
 let linkPreviewStyleElem = null;
-function style() {
+function styleInstall() {
   if (!linkPreviewStyleElem) {
     linkPreviewStyleElem = document.createElement("style");
     linkPreviewStyleElem.setAttribute("type", "text/css");
@@ -102,9 +102,26 @@ content a.internal-link {
   return linkPreviewStyleElem;
 }
 
+function iframeInstall() {
+  if (iframeInstall.ed) return;
+  iframeInstall.ed = true;
+
+  iframe.setAttribute("id", "link-preview-iframe");
+  iframe.setAttribute("style", "display: none; height: 0; width: 0;");
+  document.body.appendChild(iframe);
+
+  tooltipWrapper.setAttribute("id", "tooltip-wrapper");
+  tooltipWrapper.setAttribute("style", "opacity: 0; display: none;");
+  tooltipContent.setAttribute("id", "tooltip-content");
+  tooltipWrapper.appendChild(tooltipContent);
+
+  iframe.parentNode.insertBefore(tooltipWrapper, iframe);
+}
+
 export function attach(wrapperQuerySelector = "") {
-  style();
-  
+  styleInstall();
+  iframeInstall();
+
   document.querySelectorAll(
     `${wrapperQuerySelector} a`
   ).forEach(function setupListeners(linkElement) {
