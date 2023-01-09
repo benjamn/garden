@@ -35,7 +35,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
+          # Checks out private repository benjamn/garden-vault at _notes/vault, using a
+          # personal access token (PAT) that grants read-only (cloning) access.
           submodules: recursive
+          # This access token is stored as a GitHub Actions environment secret, so it
+          # will need to be redefined if you fork the benjamn/garden repository.
           token: ${{ secrets.PAT_READONLY }}
       - name: Setup Ruby
         uses: ruby/setup-ruby@ee2113536afb7f793eed4ce60e8d3b26db912da4 # v1.127.0
