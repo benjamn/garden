@@ -1,31 +1,35 @@
 # Ben's Digital Garden
 
-Use this template repository to get started with your own digital garden.
+This [MIT-licensed](LICENSE) repository shares the generic Jekyll system behind the digital garden I publish at [benjamn.dev](https://benjamn.dev).
 
-**I wrote a tutorial explaining how to set it up: [Setting up your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)**
+## Privacy of content
 
-Preview the template here: https://digital-garden-jekyll-template.netlify.app/
+All my personal content is hidden away in a private submodule repository in the `_notes/vault` directory. After forking this repository, please be aware you will not automatically have access to my personal content, which remains under strict copyright (all rights reserved).
+
+To work around this intentional limitation, you will need to either get rid of the submodule by running `git rm _notes/vault`, or run `git submodule set-url ...` to use a different private (or public) repository of your own:
+```
+git submodule set-url _notes/vault https://github.com/your-github-username/your-vault.git
+git submodule update --init --recursive
+```
+Either way, my content stays with me.
+
+## Prior work/inspiration
+
+[Maxime Vaillancourt](https://maximevaillancourt.com) wrote a tutorial called [Setting up your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll) that caught my eye, and this repository was originally a fork of [Vaillancourt's Jekyll template](https://github.com/maximevaillancourt/digital-garden-jekyll-template), which you can find running [on Netlify](https://digital-garden-jekyll-template.netlify.app/) for comparison.
+
+## Original features (with some **updates**)
 
 - Based on Jekyll, a static website generator
 - Supports Roam-style double bracket link syntax to other notes
 - Creates backlinks to other notes automatically
 - Features link previews on hover
-- Includes graph visualization of the notes and their links
+- ~~Includes graph visualization of the notes and their links~~
+  - **Disabled for now for privacy of unlinked notes**
 - Features a simple and responsive design
 - Supports Markdown or HTML notes
 
-<img width="1522" alt="Screen Shot 2020-05-19 at 23 05 46" src="https://user-images.githubusercontent.com/8457808/82400515-7d026d80-9a25-11ea-83f1-3b9cb8347e07.png">
-
-## A note about GitHub Pages
-
-GitHub Pages only partially supports this template: to power the interactive notes graph, this template uses a custom Jekyll plugin to generate the graph data in [`notes_graph.json`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/7ac331a4113bac77c993856562acc2bfbde9f2f7/_plugins/bidirectional_links_generator.rb#L102), and [GitHub Pages doesn't support custom Jekyll plugins](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins).
-
-If you want to use the graph with GitHub Pages, you may try building your garden locally using Jekyll then pushing the result to GitHub Pages.
-
-Alternatively, you may deploy your garden to Netlify and it'll work out of the box. [I wrote a guide explaining how to set this up](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
-
-If you don't care about the graph, you can simply remove it from this layout, [as explained here](https://github.com/maximevaillancourt/digital-garden-jekyll-template/discussions/132#discussioncomment-3625772).
-
 ## License
 
-Source code is available under the [MIT license](LICENSE.md).
+The source code, structure, and configuration of this repository are released under the [MIT license](LICENSE), just like the [LICENSE of the original template](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/master/LICENSE).
+
+However, the content of the published [benjamn.dev](https://benjamn.dev) website and the content of the `_notes/vault` submodule remain under strict copyright, with all rights reserved by the GitHub user responsible for publishing them (that is, me).
