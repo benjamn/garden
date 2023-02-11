@@ -13,6 +13,8 @@ git submodule update --init --recursive
 ```
 Either way, my content stays with me.
 
+Follow [this link](https://github.com/settings/personal-access-tokens/new) to create the personal access token you will need for checking out the private `_notes/vault` submodule when publishing your public garden.
+
 ## Prior work/inspiration
 
 [Maxime Vaillancourt](https://maximevaillancourt.com) wrote a tutorial called [Setting up your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll) that caught my eye, and this repository was originally a fork of [Vaillancourt's Jekyll template](https://github.com/maximevaillancourt/digital-garden-jekyll-template), which you can find running [on Netlify](https://digital-garden-jekyll-template.netlify.app/) for comparison.
